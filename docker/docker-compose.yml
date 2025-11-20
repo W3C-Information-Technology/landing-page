@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    environment:
+      - TZ=UTC
+    # Uncomment volume mapping for development if you want live reload
+    # volumes:
+    #   - ./:/usr/share/nginx/html:ro
