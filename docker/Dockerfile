@@ -12,7 +12,7 @@ COPY . /usr/share/nginx/html
 RUN chown -R nginx:nginx /usr/share/nginx/html
 
 # Expose port 80 (Dokploy will map host port)
-EXPOSE 80
+EXPOSE 4000
 
 # Use the default nginx entrypoint/cmd from the base image
 # (no CMD needed)
