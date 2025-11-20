@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechVision - Leading IT Solutions Provider">
+    <meta name="theme-color" content="#0066cc">
+    <title>TechVision - Professional IT Solutions</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230066cc' width='100' height='100'/><text x='50' y='65' font-size='70' font-weight='bold' text-anchor='middle' fill='white'>T</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-cube"></i>
+                    <span>TechVision</span>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+            <div class="gradient-blob blob-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Transform Your Business with <span class="gradient-text">Modern IT Solutions</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        We deliver cutting-edge technology solutions to help your business thrive in the digital age. Expert team, innovative strategies, proven results.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn btn-primary">Get Started</a>
+                        <a href="#contact" class="btn btn-secondary">Learn More</a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>98%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Team Members</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="image-container">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-code"></i>
+                            <span>Development</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Security</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-cloud"></i>
+                            <span>Cloud</span>
+                        </div>
+                        <svg class="hero-illustration" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#0066cc;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="200" cy="200" r="150" fill="url(#heroGradient)" opacity="0.1"/>
+                            <rect x="100" y="100" width="200" height="200" rx="20" fill="none" stroke="url(#heroGradient)" stroke-width="3"/>
+                            <circle cx="200" cy="200" r="60" fill="none" stroke="url(#heroGradient)" stroke-width="2"/>
+                            <line x1="200" y1="140" x2="200" y2="260" stroke="url(#heroGradient)" stroke-width="2"/>
+                            <line x1="140" y1="200" x2="260" y2="200" stroke="url(#heroGradient)" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive IT solutions tailored to your business needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" style="--delay: 0s;">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom web applications built with modern technologies. Responsive, fast, and scalable solutions for your business.</p>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+                
+                <div class="service-card" style="--delay: 0.1s;">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Apps</h3>
+                    <p>Native and cross-platform mobile applications. User-friendly interfaces with powerful backend functionality.</p>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+                
+                <div class="service-card" style="--delay: 0.2s;">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Secure and scalable cloud infrastructure. Migration, deployment, and management of cloud resources.</p>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+                
+                <div class="service-card" style="--delay: 0.3s;">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cybersecurity</h3>
+                    <p>Advanced security solutions to protect your data. Threat detection, prevention, and compliance management.</p>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+                
+                <div class="service-card" style="--delay: 0.4s;">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Intelligent solutions powered by AI. Automation, predictive analytics, and data-driven insights.</p>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+                
+                <div class="service-card" style="--delay: 0.5s;">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>IT Consulting</h3>
+                    <p>Strategic IT guidance and planning. Digital transformation, process optimization, and technology roadmap.</p>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>Showcase of our successful implementations</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" style="--delay: 0s;">
+                    <div class="portfolio-image">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="300" fill="#f0f5ff"/>
+                            <rect x="30" y="30" width="240" height="240" rx="15" fill="#0066cc" opacity="0.1"/>
+                            <circle cx="90" cy="90" r="30" fill="#0066cc"/>
+                            <circle cx="210" cy="90" r="30" fill="#00d4ff"/>
+                            <circle cx="150" cy="210" r="30" fill="#0099ff"/>
+                        </svg>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Enterprise-level shopping platform with AI recommendations</p>
+                        <div class="portfolio-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" style="--delay: 0.1s;">
+                    <div class="portfolio-image">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="300" fill="#fff0f5"/>
+                            <rect x="30" y="30" width="240" height="240" rx="15" fill="#00d4ff" opacity="0.1"/>
+                            <rect x="50" y="50" width="60" height="60" fill="#00d4ff"/>
+                            <rect x="130" y="50" width="60" height="60" fill="#0099ff"/>
+                            <rect x="210" y="50" width="60" height="60" fill="#0066cc"/>
+                            <rect x="50" y="130" width="220" height="120" rx="10" fill="none" stroke="#0066cc" stroke-width="3"/>
+                        </svg>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Financial Dashboard</h3>
+                        <p>Real-time analytics and reporting system for banking</p>
+                        <div class="portfolio-tags">
+                            <span>Angular</span>
+                            <span>Python</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" style="--delay: 0.2s;">
+                    <div class="portfolio-image">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="300" fill="#f5f0ff"/>
+                            <circle cx="150" cy="150" r="120" fill="#9333ea" opacity="0.1"/>
+                            <circle cx="150" cy="150" r="80" fill="none" stroke="#9333ea" stroke-width="3"/>
+                            <line x1="150" y1="70" x2="150" y2="230" stroke="#9333ea" stroke-width="2"/>
+                            <line x1="70" y1="150" x2="230" y2="150" stroke="#9333ea" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Healthcare App</h3>
+                        <p>Mobile health management with telemedicine features</p>
+                        <div class="portfolio-tags">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <p>Real feedback from our satisfied clients</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" style="--delay: 0s;">
+                    <div class="testimonial-header">
+                        <div class="avatar">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="50" fill="#0066cc"/>
+                                <circle cx="50" cy="35" r="15" fill="white"/>
+                                <path d="M 30 60 Q 50 75 70 60" fill="white"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>John Smith</h4>
+                            <p>CEO, Tech Startup</p>
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "TechVision delivered an exceptional solution that exceeded our expectations. Their team's expertise and dedication made the entire process smooth."
+                    </p>
+                </div>
+                
+                <div class="testimonial-card" style="--delay: 0.1s;">
+                    <div class="testimonial-header">
+                        <div class="avatar">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="50" fill="#00d4ff"/>
+                                <circle cx="50" cy="35" r="15" fill="white"/>
+                                <path d="M 30 60 Q 50 75 70 60" fill="white"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>Marketing Director</p>
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Outstanding work! The team was responsive, creative, and delivered on time. They truly understand our business needs."
+                    </p>
+                </div>
+                
+                <div class="testimonial-card" style="--delay: 0.2s;">
+                    <div class="testimonial-header">
+                        <div class="avatar">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="50" fill="#9333ea"/>
+                                <circle cx="50" cy="35" r="15" fill="white"/>
+                                <path d="M 30 60 Q 50 75 70 60" fill="white"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <p>Product Manager</p>
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Professional, reliable, and results-driven. TechVision is our go-to partner for all IT solutions. Highly recommended!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-background">
+            <div class="gradient-blob cta-blob-1"></div>
+            <div class="gradient-blob cta-blob-2"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Let's work together to achieve your technology goals</p>
+                <a href="#contact" class="btn btn-white">Start Your Project Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p>We'd love to hear from you. Send us a message!</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>123 Tech Street<br>San Francisco, CA 94105</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>+1 (555) 123-4567<br>Mon - Fri, 9am - 6pm</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>info@techvision.com<br>support@techvision.com</p>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-background">
+            <div class="gradient-blob footer-blob"></div>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechVision</h3>
+                    <p>Delivering innovative IT solutions for tomorrow's challenges.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">Mobile Apps</a></li>
+                        <li><a href="#services">Cloud Solutions</a></li>
+                        <li><a href="#services">Cybersecurity</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Subscribe</h4>
+                    <p>Get the latest news and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechVision. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,417 @@
+/* 
+   CUSTOMIZATION GUIDE FOR TECHVISION LANDING PAGE
+   ================================================
+   
+   This file provides examples of how to customize the landing page
+   for your specific IT company needs.
+*/
+
+/* ====================================
+   1. CHANGE BRAND COLORS
+   ==================================== */
+
+/* To change the primary brand color, edit :root variables */
+:root {
+    /* Original Colors */
+    /* --primary-color: #0066cc;
+    --primary-dark: #0052a3;
+    --primary-light: #3399ff;
+    --accent-cyan: #00d4ff;
+    --accent-purple: #9333ea;
+    --accent-orange: #ff6b35; */
+    
+    /* Example: Change to Purple Brand */
+    /* --primary-color: #7c3aed;
+    --primary-dark: #6d28d9;
+    --primary-light: #a78bfa;
+    --accent-cyan: #06b6d4;
+    --accent-purple: #ec4899;
+    --accent-orange: #f97316; */
+    
+    /* Example: Change to Green Brand */
+    /* --primary-color: #059669;
+    --primary-dark: #047857;
+    --primary-light: #6ee7b7;
+    --accent-cyan: #14b8a6;
+    --accent-purple: #8b5cf6;
+    --accent-orange: #f59e0b; */
+}
+
+/* ====================================
+   2. CUSTOMIZE FONTS
+   ==================================== */
+
+/* Import different Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Apply custom fonts */
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Georgia', serif; */
+    /* font-family: 'Courier New', monospace; */
+}
+
+/* ====================================
+   3. CHANGE BUTTON STYLES
+   ==================================== */
+
+/* Make buttons more rounded */
+.btn {
+    /* border-radius: 100px; */ /* Very rounded */
+    /* border-radius: 5px; */   /* Slightly rounded */
+}
+
+/* Add more button variants */
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* ====================================
+   4. MODIFY SPACING
+   ==================================== */
+
+/* Increase spacing between sections */
+.services,
+.portfolio,
+.testimonials,
+.contact {
+    /* padding: 10rem var(--spacing-lg); */ /* Larger spacing */
+}
+
+/* Reduce spacing for compact design */
+/* 
+.services,
+.portfolio {
+    padding: 3rem var(--spacing-lg);
+}
+*/
+
+/* ====================================
+   5. CUSTOMIZE CARDS
+   ==================================== */
+
+/* Make cards more or less rounded */
+.service-card,
+.portfolio-item,
+.testimonial-card,
+.info-card {
+    /* border-radius: 25px; */ /* More rounded */
+    /* border-radius: 5px; */  /* Less rounded */
+}
+
+/* Add borders to cards instead of shadows */
+.service-card,
+.portfolio-item,
+.testimonial-card {
+    /* border: 2px solid var(--border-color);
+    box-shadow: none; */
+}
+
+/* ====================================
+   6. MODIFY ANIMATIONS
+   ==================================== */
+
+/* Disable all animations for performance */
+*,
+*::before,
+*::after {
+    /* animation: none !important;
+    transition: none !important; */
+}
+
+/* Speed up animations */
+.btn,
+.service-card,
+.nav-menu a::after {
+    /* transition: all 0.1s ease-in-out; */ /* Faster */
+}
+
+/* Slow down animations */
+/* 
+.btn,
+.service-card {
+    transition: all 0.7s ease-in-out;
+}
+*/
+
+/* ====================================
+   7. DARK MODE THEME
+   ==================================== */
+
+/* Enable dark mode (uncomment to use) */
+/*
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-primary: #1a1a2e;
+        --bg-secondary: #16213e;
+        --text-primary: #eaeaea;
+        --text-secondary: #b0b0b0;
+        --border-color: #2a2a3e;
+    }
+    
+    .navbar {
+        background: rgba(26, 26, 46, 0.95);
+    }
+    
+    .service-card,
+    .portfolio-item,
+    .testimonial-card,
+    .info-card {
+        background: #16213e;
+    }
+}
+*/
+
+/* ====================================
+   8. MODIFY HERO SECTION
+   ==================================== */
+
+/* Make hero taller or shorter */
+.hero {
+    /* min-height: 120vh; */ /* Taller */
+    /* min-height: 80vh; */  /* Shorter */
+}
+
+/* Hide hero background blobs */
+.gradient-blob {
+    /* display: none; */
+}
+
+/* Adjust hero text size */
+.hero-title {
+    /* font-size: 4rem; */
+    /* font-size: 2rem; */
+}
+
+/* ====================================
+   9. CUSTOMIZE NAVIGATION
+   ==================================== */
+
+/* Make navbar transparent */
+.navbar {
+    /* background: transparent;
+    box-shadow: none; */
+}
+
+/* Change navbar height */
+.nav-wrapper {
+    /* padding: 2rem 0; */
+}
+
+/* ====================================
+   10. MODIFY FOOTER
+   ==================================== */
+
+/* Change footer background */
+.footer {
+    /* background: linear-gradient(135deg, #0066cc, #00d4ff); */
+    /* background: #1a1a1a; */
+}
+
+/* Make footer darker or lighter */
+.footer {
+    /* background: rgba(0, 0, 0, 0.95); */
+}
+
+/* ====================================
+   11. RESPONSIVE TWEAKS
+   ==================================== */
+
+/* Larger fonts on mobile */
+@media (max-width: 480px) {
+    h1 {
+        /* font-size: 2.5rem; */
+    }
+    
+    .service-card {
+        /* padding: 2rem; */
+    }
+}
+
+/* ====================================
+   12. SECTION BACKGROUND COLORS
+   ==================================== */
+
+/* Alternate section backgrounds */
+.services {
+    /* background: linear-gradient(135deg, #f8f9fb, #ffffff); */
+}
+
+.portfolio {
+    /* background: var(--bg-primary); */
+}
+
+.contact {
+    /* background: linear-gradient(135deg, #0066cc 0%, #00d4ff 100%); */
+}
+
+/* ====================================
+   13. REMOVE/MODIFY SHADOWS
+   ==================================== */
+
+/* Remove all box shadows */
+* {
+    /* box-shadow: none !important; */
+}
+
+/* More prominent shadows */
+.service-card,
+.portfolio-item {
+    /* box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2); */
+}
+
+/* ====================================
+   14. CUSTOMIZE SERVICE CARDS
+   ==================================== */
+
+/* Show service card icons differently */
+.service-icon {
+    /* border-radius: 50%; */ /* Circle instead of square */
+    /* font-size: 4rem; */
+    /* background: var(--primary-color); */
+    /* color: white; */
+}
+
+/* ====================================
+   15. MODIFY CONTACT FORM
+   ==================================== */
+
+/* Style form inputs differently */
+.form-group input,
+.form-group textarea {
+    /* border: 1px solid #ddd;
+    border-radius: 5px; */
+    /* background: var(--bg-secondary); */
+}
+
+/* ====================================
+   EXAMPLES - READY TO USE THEMES
+   ==================================== */
+
+/* 
+   TECH BLUE THEME (Default)
+   Already applied in the main CSS
+*/
+
+/* 
+   CORPORATE DARK THEME
+   Uncomment to apply:
+*/
+/*
+:root {
+    --primary-color: #1e40af;
+    --primary-dark: #1e3a8a;
+    --primary-light: #3b82f6;
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+}
+*/
+
+/* 
+   STARTUP VIBRANT THEME
+   Uncomment to apply:
+*/
+/*
+:root {
+    --primary-color: #db2777;
+    --primary-dark: #be185d;
+    --primary-light: #ec4899;
+    --accent-cyan: #06b6d4;
+    --accent-purple: #7c3aed;
+}
+*/
+
+/* 
+   ECO FRIENDLY THEME
+   Uncomment to apply:
+*/
+/*
+:root {
+    --primary-color: #16a34a;
+    --primary-dark: #15803d;
+    --primary-light: #4ade80;
+    --accent-cyan: #14b8a6;
+    --accent-orange: #f59e0b;
+}
+*/
+
+/* ====================================
+   UTILITY CLASSES FOR QUICK CHANGES
+   ==================================== */
+
+/* Hide specific elements */
+.hide {
+    display: none;
+}
+
+/* Make text uppercase */
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* Add border to elements */
+.bordered {
+    border: 2px solid var(--border-color);
+}
+
+/* Add background color */
+.bg-light {
+    background: var(--bg-secondary);
+}
+
+.bg-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* ====================================
+   PRINT STYLES
+   ==================================== */
+
+@media print {
+    .navbar,
+    .footer,
+    .mobile-menu-btn {
+        display: none;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+}
+
+/* ====================================
+   TIPS FOR CUSTOMIZATION
+   ==================================== */
+
+/*
+   1. USE CSS VARIABLES: Change :root variables to update entire theme
+   
+   2. MOBILE FIRST: Make changes mobile-friendly with media queries
+   
+   3. TEST IN BROWSERS: Check Firefox, Chrome, Safari, Edge
+   
+   4. BACKUP ORIGINAL: Keep original CSS as reference
+   
+   5. USE BROWSER DevTools: Experiment with changes in inspector
+   
+   6. PERFORMANCE: Don't add too many animations
+   
+   7. ACCESSIBILITY: Maintain contrast ratios
+   
+   8. CONSISTENCY: Use same colors and spacing throughout
+   
+   9. RESPONSIVE: Test on different screen sizes
+   
+   10. USER TESTING: Get feedback before deploying
+*/
