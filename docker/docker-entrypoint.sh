@@ -4,19 +4,11 @@ set -e
 # default port if not provided
 : "${PORT:=80}"
 
-# If IWAN env var is provided (per your request), prefer it as the listen port
-if [ -n "${IWAN:-}" ]; then
-  SOURCE_VAR="IWAN"
-  PORT="${IWAN}"
-else
-  SOURCE_VAR="PORT"
-fi
-
 # Timestamp helper
 timestamp() { date -u +"%Y-%m-%dT%H:%M:%SZ"; }
 
 TS=$(timestamp)
-echo "[$TS] => Container starting: configuring nginx to listen on port ${PORT} (from ${SOURCE_VAR})"
+echo "[$TS] => Container starting: configuring nginx to listen on port ${PORT}"
 echo "[$TS] => Container info: HOSTNAME=$(hostname)"
 
 # Render nginx config from template by substituting ${PORT}

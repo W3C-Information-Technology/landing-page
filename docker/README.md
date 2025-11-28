@@ -6,12 +6,10 @@ Files
 - `Dockerfile` — builds an nginx image that serves the static site. Entrypoint renders an nginx template from `docker/nginx/default.conf.template` using `PORT`.
 - `docker-compose.yml` — local compose for testing. Uses `docker/.env` by default to set `PORT` and `HOST_PORT`.
 - `docker/.env` — example env file (contains `PORT` and `HOST_PORT`).
-- `docker/.env` — example env file (contains `PORT`, `IWAN` and `HOST_PORT`).
 
 Environment variables
 - `PORT` — the container port nginx will listen on (default `80`).
 - `HOST_PORT` — local host port to map to the container when using `docker-compose` (default `8080`).
- - `IWAN` — optional alternate variable name for the container port. If set, the entrypoint prefers `IWAN` over `PORT` (this supports environments where you prefer a different variable name).
 
 Local testing (PowerShell)
 
