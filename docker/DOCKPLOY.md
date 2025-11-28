@@ -30,11 +30,13 @@ Flow A — Deploy by connecting your Git repository
 2. Log in to Dokploy web UI and create a new project/app.
 3. Choose "Deploy from Git" (or similar option).
 4. Connect your Git provider and select the repository and branch (e.g., `main` or `master`).
-5. Set the build mode to "Dockerfile" or "Docker build". Set the Dockerfile path to the repository root (`./Dockerfile`).
+5. Set the build mode to "Dockerfile" or "Docker build". Point Dokploy to `docker/Dockerfile` (recommended) and use repository root `/` as the build context. If your Dokploy setup requires a root-level Dockerfile, you can also use `./Dockerfile`.
 6. Optionally set the build context to `/` (root). Dokploy will run `docker build` using your Dockerfile.
-7. Set the container port mapping in the UI to map container port `80` (exposed in Dockerfile) to the platform's external port (Dokploy will provide a public endpoint).
-8. (Optional) Add environment variables in the web UI if needed (not usually necessary for static sites).
-    - If you prefer repository-managed configuration, there's a `docker/.env` file in the repo that sets `PORT` (container listen port) and `HOST_PORT` (local host mapping used for docker-compose). Dokploy itself typically requires you to set runtime environment variables in the app settings (Environment or Variables section) in the web UI — platform-managed env vars override or replace a repo .env file.
+7. Set the container port mapping in the UI to the container port you're using (default `80`) — Dokploy will provide a public endpoint.
+8. Add environment variables in the web UI to configure runtime behavior. Important variables:
+    - `PORT` — container listen port (default `80`).
+    - `IWAN` — alternate variable name supported by the image; if set, the entrypoint will prefer `IWAN` over `PORT`.
+    - Note: `docker/.env` is provided for local testing (compose). Dokploy typically requires you to set runtime env vars in the app settings — platform-managed env vars override repo .env files.
 9. Trigger the first deploy. Dokploy will build the Docker image and start the container.
 10. Check build logs in the UI. When the build finishes, open the provided public URL to verify the site.
 
