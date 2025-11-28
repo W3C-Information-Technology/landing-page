@@ -12,6 +12,7 @@ Prerequisites
 Files included
 - `Dockerfile` — serves the static site with nginx
 - `docker-compose.yml` — local testing helper (maps 8080 -> 80)
+ - `docker-compose.yml` — local testing helper (uses `docker/.env` for PORT/HOST_PORT)
 - `.dockerignore` — avoids sending unnecessary files to Docker build context
 
 Quick overview of the approach
@@ -33,6 +34,7 @@ Flow A — Deploy by connecting your Git repository
 6. Optionally set the build context to `/` (root). Dokploy will run `docker build` using your Dockerfile.
 7. Set the container port mapping in the UI to map container port `80` (exposed in Dockerfile) to the platform's external port (Dokploy will provide a public endpoint).
 8. (Optional) Add environment variables in the web UI if needed (not usually necessary for static sites).
+    - If you prefer repository-managed configuration, there's a `docker/.env` file in the repo that sets `PORT` (container listen port) and `HOST_PORT` (local host mapping used for docker-compose). Dokploy itself typically requires you to set runtime environment variables in the app settings (Environment or Variables section) in the web UI — platform-managed env vars override or replace a repo .env file.
 9. Trigger the first deploy. Dokploy will build the Docker image and start the container.
 10. Check build logs in the UI. When the build finishes, open the provided public URL to verify the site.
 
@@ -88,8 +90,8 @@ Local testing (recommended before web UI deploy)
 
 ```powershell
 # From repo root
-docker compose up --build
-# Open http://localhost:8080
+docker compose -f docker/docker-compose.yml up --build
+# By default this maps host 8080 -> container PORT (from docker/.env). Open http://localhost:8080
 ```
 
 2. Or use direct docker commands:

@@ -3,8 +3,12 @@ version: "3.8"
 services:
   web:
     build: .
+    # Use the local .env file (placed next to this compose file) to provide PORT/HOST_PORT
+    env_file:
+      - .env
     ports:
-      - "8080:80"
+      # maps host HOST_PORT to container PORT; defaults: HOST_PORT=8080, PORT=80
+      - "${HOST_PORT:-8080}:${PORT:-80}"
     restart: unless-stopped
     environment:
       - TZ=UTC
